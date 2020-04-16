@@ -22,7 +22,16 @@ h1, h2 {
   text-align: center;
 }
 
-video, audio {
+.video-wrapper,
+.audio-wrapper {
   margin: 0 auto;
   display: block;
+}
+
+.video-wrapper {
+  width: 852px;
+}
+
+.audio-wrapper {
+  width: 400px;
 }
