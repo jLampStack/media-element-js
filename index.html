@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video and Audio</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+    <!-- jQuery minified -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+    
+    <script src="/path/to/jquery.js"></script>
+    <script src="/path/to/mediaelement-and-player.min.js"></script>
+    <!-- Stylesheet for Media Element Player -->
+    <link rel="stylesheet" href="/path/to/mediaelementplayer.min.css" />
+
+  </head>
+  <body>
+
+    <h1>HTML Video and Audio</h1>
+    
+    <div class="wrapper">
+      
+      <h2>Video Example</h2>
+      
+      <video width="852" height="480" controls>
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
+        <track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
+      </video>
+
+      <h2>Audio Example</h2>
+
+      <audio controls>
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+
+  </body>
+</html>
+
+
+
+
+
