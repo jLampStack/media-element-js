@@ -29,7 +29,7 @@
       <h2>Video Example</h2>
 
       <div class="video-wrapper">     
-        <video class="mejs__player" width="852" height="480" >
+        <video width="852" height="480" >
             <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
             <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
             <track label="English" kind="subtitles" srclang="en" src="bridge-captions.vtt" default>
@@ -39,11 +39,20 @@
       <h2>Audio Example</h2>
 
       <div class="audio-wrapper">
-        <audio class="mejs__player" >
+        <audio >
           <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge-audio.mp3" type="audio/mp3">
         </audio>
       </div>
     </div>
+
+    <script>
+      $('video, audio').mediaelementplayer({
+        // controls feats and in what order
+        features: ['playpause', 'tracks', 'progress', 'volume', 'tracks', 'duration'],
+        startLanguage: 'en',
+      });
+
+    </script>
 
   </body>
 </html>
